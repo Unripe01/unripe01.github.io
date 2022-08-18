@@ -4,7 +4,6 @@ const createSnow = () => {
   /* 雪の要素を生成したい */
   let snow = document.createElement("span");
   snow.className = "snow";
-  snow.innerHTML = "yu-"
 
   minSize = 5;
   maxSize = 10;
