@@ -1,0 +1,240 @@
+/*ver3*/
+@charset "utf-8";
+@media only screen and (max-width : 800px)
+{
+
+    /*-------------------------------------*/
+    /*  サイト全体の共通設定               */
+    /*-------------------------------------*/
+    html,body
+    {
+        width: 100%;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+
+    
+    .content_form,
+    .content_confirm,
+    .content_box
+    {
+        width : 100%;
+        margin : auto;
+    }
+    
+    /*-------------------------------------*/
+    /*                                     */
+    /*  テーブル         */
+    /*                                     */
+    /*-------------------------------------*/
+    .content_title table,
+    .content_box table,
+    .content_confirm table,
+    .content_form table
+    {
+        margin : 0px;
+        padding-left : 0px;
+        padding-right : 0px;
+        width : 100%;
+    }
+    
+    .content_title th,
+    .content_box th,
+    .content_confirm th,
+    .content_form th
+    {
+        border-top: 0;
+        border-bottom: 0;
+        display : block;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        
+        /*横幅のサイズ (余白分引く)*/
+        width : 98%;
+        width : -webkit-calc(100% - 20px);
+        width : calc(100% - 20px);
+        
+        padding-left : 5px;
+        padding-right : 0px;
+        
+        margin-right : auto;
+        margin-left : auto;
+    }
+    
+    .content_title th .my_column.my_left,
+    .content_box th .my_column.my_left,
+    .content_confirm th .my_column.my_left,
+    .content_form th .my_column.my_left
+    {
+        width : 98%;
+        width : -webkit-calc(100% - 20px);
+        width : calc(100% - 20px);
+        
+        margin-left : auto;
+        margin-right : auto;
+    }
+    
+    
+    .content_title td,
+    .content_box td,
+    .content_confirm td,
+    .content_form td
+    {
+        padding-left : 0px;
+        padding-right : 0px;    
+    
+        border-top: 0;
+        border-bottom: 0;
+        display : block;
+
+        /*横幅のサイズ (余白分引く)*/
+        width : 98%;
+        width : -webkit-calc(100% - 20px);
+        width : calc(100% - 20px);
+
+        margin-right : auto;
+        margin-left : auto;
+
+    }
+    
+    .content_title td .my_column.my_right,
+    .content_box td .my_column.my_right,
+    .content_confirm td .my_column.my_right,
+    .content_form td .my_column.my_right
+    {
+        width : 98%;
+        width : -webkit-calc(100% - 20px);
+        width : calc(100% - 20px);
+        
+        margin-left : auto;
+        margin-right : auto;
+    }
+    
+    
+    /*-------------------------------------*/
+    /*                                     */
+    /*  疑似テーブル表示  (ベース)         */
+    /*                                     */
+    /*-------------------------------------*/
+    .content_title .input_unit,
+    .content_box .input_unit,
+    .content_form .input_unit,
+    .content_confirm .input_unit
+    {
+        display : block;
+        margin-top : 5px;
+        margin-bottom : 5px;
+        margin-left : auto;
+        margin-right : auto;
+
+        /*横幅のサイズ (余白分引く)*/
+        width : 98%;
+        width : -webkit-calc(100% - 20px);
+        width : calc(100% - 20px);
+    }           
+    
+    .content_title .input_unit,
+    .content_box .input_unit .my_column,
+    .content_form .input_unit .my_column,
+    .content_confirm .input_unit .my_column
+    {
+        display : inline-block;
+        border : none;
+    }
+    
+    .content_title .input_unit,
+    .content_box .input_unit .my_left.my_column,
+    .content_form .input_unit .my_left.my_column,
+    .content_confirm .input_unit .my_left.my_column,
+    .content_title .input_unit .my_heading.my_column,
+    .content_box .input_unit .my_heading.my_column,
+    .content_confirm .input_unit .my_heading.my_column,
+    .content_form .input_unit .my_heading.my_column
+    {
+        /*横幅のサイズ (余白分引く)*/
+        width : 95%;
+        width : -webkit-calc(100% - 20px);
+        width : calc(100% - 20px);
+        
+        margin-right : auto;
+        margin-left : auto;
+    }
+    
+    .content_title .input_unit,
+    .content_box .input_unit .my_right.my_column,
+    .content_form .input_unit .my_right.my_column,
+    .content_confirm .input_unit .my_right.my_column
+    {
+        /*横幅のサイズ (余白分引く)*/
+        width : 95%;
+        width : -webkit-calc(100% - 20px);
+        width : calc(100% - 20px);
+        
+        padding-top : 15px;
+        min-height : 1em; /*空白対策*/
+        text-align : left;
+        
+        margin-right : auto;
+        margin-left : auto;
+    }
+    
+    /*-------------------------------------*/
+    /*  Hタグ                              */
+    /*-------------------------------------*/
+    .content_title h2,
+    .content_box h2,
+    .content_confirm h2,
+    .content_form h2
+    {
+        font-size: 1.5em;
+    }
+
+    /*-------------------------------------*/
+    /*  selectタグ                         */
+    /*-------------------------------------*/
+    form.myForm select
+    {
+        width : 98%;
+        width : -webkit-calc(100% - 10px - 2.8px);
+        width : calc(100% - 10px - 2.8px);
+    }
+
+    /*-------------------------------------*/
+    /*画像サイズの調整*/
+    /*-------------------------------------*/
+    img 
+    {
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .date_time1 .datetime_year_unit,
+    .date_time1 .datetime_month_unit,
+    .date_time1 .datetime_day_unit
+    {
+        padding-top : 0px;
+        padding-bottom : 0px;
+        padding-left : 0px;
+        padding-right : 0px;
+    }
+    
+    /*-------------------------------------*/
+    /*  必須                   */
+    /*-------------------------------------*/
+    form.myForm .required .my_column.my_left label:first-child:after, 
+    form.myForm th.required label:first-child:after, 
+    form.myForm span.required:after
+    {
+        font-size: 0.8em;
+    }
+    
+        
+
+
+
+
+
+} /*@media only screen and (max-width : 800px)*/
+
+

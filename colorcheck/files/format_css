@@ -1,0 +1,722 @@
+
+@charset "utf-8";
+/* frame ver2 */
+/*-------------------------------------*/
+/*  本文のデザイン                     */
+/*-------------------------------------*/
+/*ヘッダータイトル*/
+.content_title
+{
+    width : 100%;
+    margin-top : 0px;
+    margin-bottom : 20px;
+    margin-left : 0px;
+    margin-right : 0px;
+    padding : 0;
+}
+
+/*お申込みフォーム*/
+.content_form
+{
+    width : 100%;
+    margin : auto;
+}
+
+/*確認ページ*/
+.content_confirm
+{
+    width : 100%;
+    margin : auto;
+}
+
+
+/*その他*/
+.content_box
+{
+    width : 100%;
+    margin : auto;
+}
+
+
+
+/*-------------------------------------*/
+/*                                     */
+/*  テーブル         */
+/*                                     */
+/*-------------------------------------*/
+.content_title table,
+.content_box table,
+.content_confirm table,
+.content_form table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    width : 100%;
+    width : -webkit-calc(100% - 20px);
+    width : calc(100% - 20px);
+    background-color: inherit;
+    
+    table-layout:fixed; /*widthの継承のため*/
+}
+
+
+.content_title th,
+.content_box th,
+.content_confirm th,
+.content_form th
+{
+    padding : 10px;    
+    border-left : 0px;
+    border-right : 0px;
+    color : black;
+    width : 35%;
+    text-align: left;
+
+}
+
+.content_title table th .my_column.my_left,
+.content_box table th .my_column.my_left,
+.content_confirm table th .my_column.my_left,
+.content_form table th .my_column.my_left
+{
+    /* min-heightが効かないので高さ対策*/
+    padding-top : 10px;
+    padding-bottom : 10px;
+    padding-left : 0px;
+    padding-right : 0px;
+    
+    display:flex; /* 中央寄せ */
+}
+
+.content_title td,
+.content_box td,
+.content_confirm td,
+.content_form td
+{
+    padding : 10px;    
+    border-left : 0px;
+    border-right : 0px;
+    background  : inherit;
+    width : 65%;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------*/
+/*                                     */
+/*  疑似テーブル表示  (ベース)         */
+/*                                     */
+/*-------------------------------------*/
+.content_title .input_unit,
+.content_box .input_unit,
+.content_confirm .input_unit,
+.content_form .input_unit
+{
+    display: table; /* ブロックレベル要素をtableと同じように表示にする */
+    width : 100%;
+    width : -webkit-calc(100% - 20px);
+    width : calc(100% - 20px);
+    table-layout: fixed;
+    
+    border-collapse: separate; /* 境界線の重複を解除 */
+    border-spacing: 5px;
+
+}
+
+.content_title .input_unit .my_column,
+.content_box .input_unit .my_column,
+.content_confirm .input_unit .my_column,
+.content_form .input_unit .my_column
+{
+    display: table-cell;  /* ブロックレベル要素をtd(th)と同じように表示にする */
+    border : none;
+}
+
+
+/* 2カラム用 */
+.content_title .input_unit .my_left.my_column,
+.content_box .input_unit .my_left.my_column,
+.content_confirm .input_unit .my_left.my_column,
+.content_form .input_unit .my_left.my_column,
+.content_title .input_unit .my_heading.my_column,
+.content_box .input_unit .my_heading.my_column,
+.content_confirm .input_unit .my_heading.my_column,
+.content_form .input_unit .my_heading.my_column
+{
+    width : 35%;
+    vertical-align: middle;
+    padding-top : 20px;
+    padding-bottom : 20px;
+    padding-left : 10px;
+    padding-right : 10px;
+}
+
+.content_title .input_unit .my_right.my_column,
+.content_box .input_unit .my_right.my_column,
+.content_confirm .input_unit .my_right.my_column,
+.content_form .input_unit .my_right.my_column
+{
+    width : 65%;
+    word-wrap: break-word;
+    background: inherit;
+    padding : 10px;
+    vertical-align: middle;
+}
+
+
+
+/* 2カラム用 サイズ50%*/
+.content_title .input_unit .my_column.my_column50,
+.content_box .input_unit .my_column.my_column50,
+.content_confirm .input_unit .my_column.my_column50,
+.content_form .input_unit .my_column.my_column50
+{
+    width : 50%;
+}
+
+/* 2カラム用 サイズ40%*/
+.content_title .input_unit .my_column.my_column40,
+.content_box .input_unit .my_column.my_column40,
+.content_confirm .input_unit .my_column.my_column40,
+.content_form .input_unit .my_column.my_column40
+{
+    width : 40%;
+}
+
+
+/* 2カラム用 サイズ60%*/
+.content_title .input_unit .my_column.my_column60,
+.content_box .input_unit .my_column.my_column60,
+.content_confirm .input_unit .my_column.my_column60,
+.content_form .input_unit .my_column.my_column60
+{
+    width : 60%;
+}
+
+
+
+
+/* 1カラム用 サイズ100%*/
+.content_title .input_unit .my_column.my_column100,
+.content_box .input_unit .my_column.my_column100,
+.content_confirm .input_unit .my_column.my_column100,
+.content_form .input_unit .my_column.my_column100
+{
+    width : 100%;
+    display : block;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+
+/*-------------------------------------*/
+/*  Hタグ                              */
+/*-------------------------------------*/
+.content_title h2,
+.content_box h2,
+.content_confirm h2,
+.content_form h2
+{
+
+    margin-top : 0px;
+    margin-bottom : 0px; 
+    margin-left : auto;
+    margin-right : auto; 
+    padding-top : 30px;
+    padding-bottom : 30px;
+    padding-left : 0px;
+    padding-right : 0px;
+    border : 0;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    text-align      : center;
+    font-weight: 700;
+    font-size: 2.0em;
+    word-wrap: break-word;
+}
+
+.content_title h3,
+.content_box h3,
+.content_confirm h3,
+.content_form h3
+{
+    word-wrap: break-word;
+}
+
+.content_title h4,
+.content_box h4,
+.content_confirm h4,
+.content_form h4
+{
+    word-wrap: break-word;
+}
+
+.content_title h5,
+.content_box h5,
+.content_confirm h5,
+.content_form h5
+{
+    word-wrap: break-word;
+}
+
+/*-------------------------------------*/
+/*  項目                             */
+/*-------------------------------------*/
+.content_title .label_frame,
+.content_box .label_frame,
+.content_confirm .label_frame,
+.content_form .label_frame
+{
+    font-weight: bold;
+}
+
+
+/*-------------------------------------*/
+/*  labelタグ                         */
+/*-------------------------------------*/
+.content_title label,
+.content_box label,
+.content_confirm label,
+.content_form label
+{
+    width : auto;
+    display : block;
+    margin : 0px;
+    padding : 0px;
+    word-break: break-all;
+}
+
+
+
+/*-------------------------------------*/
+/*  inputタグ                         */
+/*-------------------------------------*/
+/* 1行テキスト */
+form.myForm input[type="text"],
+form.myForm input[type="password"]
+{
+    width : 90%;
+    width : -webkit-calc(100% - 20.0px - 2.8px);
+    width : calc(100% - 20.0px - 2.8px);
+    display : inline-block;
+    padding: 10px;
+    vertical-align: top;
+    
+    border: 1.4px solid #bfbfbf;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    
+}
+
+form.myForm input[type="text"]:focus,
+form.myForm input[type="password"]:focus
+{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border:#217fc4 1px solid ;
+    outline: 0;
+    padding : 10.4px; /*線を補足しているのでプラス*/
+}
+
+
+/*-------------------------------------*/
+/*  ラジオボタン                   */
+/*-------------------------------------*/
+form.myForm input[type=radio]
+{
+    width : 1.5em;
+    height : 1.5em;
+    padding: 0;
+    cursor: pointer;
+    margin-right : 10px;
+    margin-left : 0px;
+    margin-top : 0px;
+    margin-bottom : 0px;
+    
+}
+
+form.myForm .radiobutton_frame
+{   
+    display: table-row;
+}
+
+form.myForm .radiobutton_input,
+form.myForm .radiobutton_label
+{
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 10px;
+}
+
+
+
+/*-------------------------------------*/
+/*  selectタグ                         */
+/*-------------------------------------*/
+form.myForm select
+{
+    display: inline-block;
+   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    vertical-align: top;
+    border: 1.4px solid #bfbfbf;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin-left : 10px;
+    margin-right : 0px;
+    cursor: pointer;
+    
+    
+    max-width: calc(100% - 10px);
+
+}
+
+form.myForm select:focus
+{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border:#000099 1px solid;
+    outline: 0;
+    /*線を補足しているのでプラス*/
+    padding-top: 10.4px;
+    padding-bottom: 10.4px;
+    padding-right: 10.4px;
+    padding-left: 10.4px;
+
+}
+
+form.myForm select:first-of-type
+{
+    margin-left : 0px;
+}
+
+
+/*-------------------------------------*/
+/*  チェックボックス                   */
+/*-------------------------------------*/
+form.myForm input[type=checkbox] 
+{
+    width : 1.5em;
+    height : 1.5em;
+    margin-right : 10px;
+    margin-left : 0px;
+    margin-top : 0px;
+    margin-bottom : 0px;
+    padding : 0;
+    cursor: pointer;
+    
+}
+
+form.myForm .checkbox_frame
+{   
+    display: table-row;
+}
+
+form.myForm .checkbox_input,
+form.myForm .checkbox_label
+{
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 10px;
+}
+
+
+
+/*-------------------------------------*/
+/*  テキストエリア                   */
+/*-------------------------------------*/
+form.myForm textarea
+{
+    width : 90%;
+    width : -webkit-calc(100% - 20.0px - 2.8px);
+    width : calc(100% - 20.0px - 2.8px);
+    
+    border: 1.4px solid #bfbfbf;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    
+    padding: 10px;
+}
+
+form.myForm textarea:focus
+{
+    padding : 10.4px;
+    
+    border : #217fc4 1px solid;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    
+    outline : 0;
+} 
+
+
+
+
+/*-------------------------------------*/
+/*  ボタン                             */
+/*-------------------------------------*/
+form.myForm div.submit
+{
+    text-align  : center;
+    margin-top : 30px;
+}
+
+
+/*-------------------------------------*/
+/*  必須                   */
+/*-------------------------------------*/
+form.myForm .required .my_column.my_left label:first-child:after, 
+form.myForm th.required label:first-child:after, 
+form.myForm span.required:after
+{
+    color: white;
+    content: '必須';
+    display: inline-block;;
+    width: 44px;
+    height: 18px;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e32;
+
+    margin-top : 0px;
+    margin-bottom : 0px;
+    margin-left : 5px;
+    margin-right : 0px;
+
+    padding-top : 2px;
+    padding-bottom : 2px;
+    padding-left : 4px;
+    padding-right : 4px;
+
+    text-align : center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+
+/*-------------------------------------*/
+/*  組み合わせデザイン                 */
+/*-------------------------------------*/
+
+
+/* 日付 */
+form.myForm .datetime_year select
+{
+    min-width : auto;
+    min-width : -webkit-calc(4em + 45px);
+    min-width : calc(4em + 45px);
+    
+    max-width: calc(100%);
+}
+
+form.myForm .datetime_month select,
+form.myForm .datetime_day select
+{
+    min-width : auto;
+    min-width : -webkit-calc(2em + 45px);
+    min-width : calc(2em + 45px);
+    
+    max-width: calc(100%);
+}
+
+
+/* datetime1 */
+
+.date_time1 .datetime_year,
+.date_time1 .datetime_year_unit,
+.date_time1 .datetime_month,
+.date_time1 .datetime_month_unit,
+.date_time1 .datetime_day,
+.date_time1 .datetime_day_unit
+{
+    display : table-cell;
+    vertical-align : middle;    
+}
+
+
+.date_time1 select
+{
+    width : auto;
+    
+}
+
+
+.date_time1 .datetime_year_unit,
+.date_time1 .datetime_month_unit,
+.date_time1 .datetime_day_unit
+{
+    padding-top : 0px;
+    padding-bottom : 0px;
+    padding-left : 5px;
+    padding-right : 0px;
+}
+
+
+.date_time1 .datetime_month,
+.date_time1 .datetime_day
+{
+    padding-top : 0px;
+    padding-bottom : 0px;
+    padding-left : 5px;
+    padding-right : 0px;
+}
+
+
+/* datetime2 */
+.date_time2 .datetime_year,
+.date_time2 .datetime_year_unit,
+.date_time2 .datetime_month,
+.date_time2 .datetime_month_unit,
+.date_time2 .datetime_day,
+.date_time2 .datetime_day_unit
+{
+    display: table-cell;
+    vertical-align : middle;    
+}
+
+
+.date_time2 select
+{
+    width : auto;
+}
+
+.date_time2 .datetime_month_unit,
+.date_time2 .datetime_day,
+.date_time2 .datetime_day_unit
+{
+    padding-top : 0px;
+    padding-bottom : 0px;
+    padding-left : 5px;
+    padding-right : 0px;
+}
+
+
+
+
+
+/*-------------------------------------*/
+/*                                     */
+/*  中央寄せ設定                       */
+/*                                     */
+/*-------------------------------------*/
+.content_title,
+.content_box,
+.content_confirm,
+.content_form
+{
+    margin-right : auto;
+    margin-left : auto;
+}
+
+/* div型 */
+.content_title .input_unit,
+.content_box .input_unit,
+.content_confirm .input_unit,
+.content_form .input_unit
+{
+    margin-right : auto;
+    margin-left : auto;
+}
+
+/* table型 */
+.content_title .table_unit,
+.content_box .table_unit,
+.content_confirm .table_unit,
+.content_form .table_unit
+{
+    margin-right : auto;
+    margin-left : auto;
+}
+
+
+.content_title h2,
+.content_box h2,
+.content_confirm h2,
+.content_form h2
+{
+    text-align : center;
+}
+
+
+
+
+/*-------------------------------------*/
+/*                                     */
+/*  入力項目の横幅                     */
+/*                                     */
+/*-------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------*/
+/*                                     */
+/*  ラジオボタンの並び                 */
+/*                                     */
+/*-------------------------------------*/
+
+
+/*-------------------------------------*/
+/*                                     */
+/*  チェックボックスの並び             */
+/*                                     */
+/*-------------------------------------*/
+
+
+
+
+/* color yellow */
+
+/*-------------------------------------*/
+/*  必須                   */
+/*-------------------------------------*/
+form.myForm .required .my_column.my_left label:first-child:after, 
+form.myForm th.required label:first-child:after, 
+form.myForm span.required:after
+{
+    background-color : inherit;
+    color : #e32;
+    content : '*';
+    width : 1em;
+    height: 1.2em;
+    
+    margin-top : 0px;
+    margin-bottom : 0px;
+    margin-left : 0px;
+    margin-right : 0px;
+
+    padding-top : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+}
+
+
+

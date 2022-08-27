@@ -1,0 +1,1100 @@
+@charset "utf-8";
+/* frame ver2 */
+/*-------------------------------------*/
+/*  全体（ヘッダー）                   */
+/*-------------------------------------*/
+body
+{
+    background      : #fff;
+}
+
+
+@media
+only screen and (max-width : 800px)
+{
+    body
+    {
+        font-size: 1em;
+    }
+
+    html,body{
+        width: 100%;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+}
+
+#container
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+@media
+only screen and (max-width : 800px)
+{
+    #container
+    {
+        padding: 0;
+    }
+}
+
+#content1
+{
+
+
+    border : 0;
+
+    box-shadow : 0px 8px 15px #999999;
+    -webkit-box-shadow : 0px 8px 15px #999999;
+    -moz-box-shadow : 0px 8px 15px #999999;
+
+    border-radius : 0;
+    -webkit-border-radius : 0px;
+    -moz-border-radius : 0px;
+
+    width : 800px;
+    min-height  : 100px;
+    margin-top : 10px;
+    margin-left : auto;
+    margin-right: auto;
+
+    padding-top  : 0px;
+    padding-bottom : 0px;
+    padding-left  : 0px;
+    padding-right  : 0px;
+
+}
+
+
+
+
+@media
+only screen and (max-width : 800px)
+{
+    #content1
+    {
+        width: 100%;
+        padding: 0px;
+        margin-top: 25px;
+        padding     : 0px;
+        box-shadow : none;
+    }
+}
+
+/*--------------------------------------*/
+/* content_box以下の第1子要素に配置した */
+/* タグの横のサイズをそろえる           */
+/*--------------------------------------*/
+/* div */
+.content_title > div,
+.content_box > div,
+.content_confirm > div,
+.content_form > div,
+.myForm > div
+{
+    width: 98%;
+    width: -webkit-calc(100% - 20.0px);
+    width: calc(100% - 20.0px);
+
+    margin-left : auto;
+    margin-right : auto;
+}
+
+/* p */
+.content_title > p,
+.content_box > p,
+.content_confirm > p,
+.content_form > p,
+.myForm > p
+{
+    width: 98%;
+    width: -webkit-calc(100% - 20.0px);
+    width: calc(100% - 20.0px);
+
+    margin-left : auto;
+    margin-right : auto;
+}
+
+/* span */
+.content_title > span,
+.content_box > span,
+.content_confirm > span,
+.content_form > span,
+.myForm > span
+{
+    width: 98%;
+    width: -webkit-calc(100% - 20.0px);
+    width: calc(100% - 20.0px);
+
+    margin-left : auto;
+    margin-right : auto;
+}
+
+/*-------------------------------------*/
+/*  本文のデザイン                     */
+/*-------------------------------------*/
+
+/*お申込みフォーム*/
+.content_form
+{
+    width : 780px;
+    background : initial;
+    padding-top : 5px;
+    padding-bottom : 5px;
+}
+
+/*確認ページ*/
+.content_confirm
+{
+    width : 780px;
+    background : initial;
+    padding-top : 5px;
+    padding-bottom : 5px;
+
+}
+
+/*その他*/
+.content_box
+{
+    width : 780px;
+    background : initial;
+    padding-top : 5px;
+    padding-bottom : 5px;
+}
+
+
+.content_title
+{
+    width : 100%;
+    background : initial;
+}
+
+
+
+
+@media
+only screen and (max-width : 800px)
+{
+
+    .content_form,
+    .content_confirm,
+    .content_box
+    {
+        width : 100%;
+        margin-left : auto;
+        margin-right : auto;
+    }
+}
+
+
+
+/*-------------------------------------*/
+/*  フッター                           */
+/*-------------------------------------*/
+
+#footer
+{
+    width: 800px;
+    color           : #FFFFFF;
+    background      : rgba(255,255,255,0.9);
+    /*background-color: #343436; */
+
+    padding-top : 10px;
+    padding-bottom : 10px;
+
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left : auto;
+    margin-right : auto;
+
+
+
+    border : 0;
+    box-shadow : 0px 8px 15px #999999;
+    -webkit-box-shadow : 0px 8px 15px #999999;
+    -moz-box-shadow : 0px 8px 15px #999999;
+
+
+
+    border-radius : 0px;
+    -webkit-border-radius : 0px;
+    -moz-border-radius : 0px;
+}
+
+#footer .footer_linkbox
+{
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background: initial;
+
+
+}
+
+
+#footer .footer_linkbox a,
+a.footer_link:link,
+a.footer_link:visited
+{
+    font-size: 1.33em;
+    color : white !important;
+    text-decoration: none;
+}
+
+
+#footer .footer_linkbox a:hover,
+a.footer_link:hover,
+a.footer_link:active
+{
+    text-decoration: underline ;
+}
+
+#footer .footer_copyright
+{
+    color : white;
+    background: initial;
+
+}
+
+@media
+only screen and (max-width : 800px)
+{
+    /*モバイル対応時*/
+    #footer
+    {
+        width : 100%;
+    }
+}
+
+
+/*-------------------------------------*/
+/*                                     */
+/*  テーブル         */
+/*                                     */
+/*-------------------------------------*/
+.content_title table,
+.content_box table,
+.content_confirm table,
+.content_form table
+{
+    /* 項目ごとの間隔をあける */
+    border-collapse: separate;
+    border-spacing: 5px;
+    -webkit-border-horizontal-spacing: 5px;
+    -webkit-border-vertical-spacing : 10px;
+}
+
+
+
+/*-------------------------------------*/
+/*  Hタグ                              */
+/*-------------------------------------*/
+.content_title h2,
+.content_box h2,
+.content_confirm h2,
+.content_form h2
+{
+    width : 100%;
+}
+
+
+.content_title h3,
+.content_box h3,
+.content_confirm h3,
+.content_form h3
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom : 10px;
+
+    font-size: 20px;
+}
+
+
+.content_title h4,
+.content_box h4,
+.content_confirm h4,
+.content_form h4
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom : 10px;
+
+    font-size: 18px;
+}
+
+
+/* h5 */
+.content_title h5,
+.content_box h5,
+.content_confirm h5,
+.content_form h5
+{
+    margin-bottom : 10px;
+}
+
+
+
+/*-------------------------------------*/
+/*  selectタグ                         */
+/*-------------------------------------*/
+form.myForm select
+{
+
+    -webkit-appearance: none;/*ベンダープレフィックス(Google Chrome、Safari用) */
+    -moz-appearance: none;/*  ベンダープレフィックス(Firefox用)*/
+    appearance: none;/*   標準のスタイルを無効にする */
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 45px;
+    padding-left: 10px;
+
+    vertical-align: top;
+    border: 1.4px solid #bfbfbf;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin-left : 10px;
+    margin-right : 0px;
+    cursor: pointer;
+
+    background: #fff url('/img/theme7/form_s02.png') no-repeat 95% 50%;
+    background: #fff url('/img/theme7/form_s02.png') no-repeat -webkit-calc(100% - 10.0px) 50%;
+    background: #fff url('/img/theme7/form_s02.png') no-repeat calc(100% - 10.0px) 50%;
+
+    max-width: calc(100% - 10px);
+}
+
+/*IE11 矢印2重表示対策 */
+select::-ms-expand
+{
+    display: none;
+}
+
+form.myForm select:focus
+{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border:#000099 1px solid;
+    outline: 0;
+    /*線を補足しているのでプラス*/
+    padding-top: 10.4px;
+    padding-bottom: 10.4px;
+    padding-right: 45.4px;
+    padding-left: 10.4px;
+
+    background: #fff url('/img/theme7/form_s02.png') no-repeat 95% 50%;
+    background: #fff url('/img/theme7/form_s02.png') no-repeat -webkit-calc(100% - 10.4px) 50%;
+    background: #fff url('/img/theme7/form_s02.png') no-repeat calc(100% - 10.4px) 50%;
+}
+
+
+/*青矢印*/
+form.myForm select.arrow_bule
+{
+    background: #fff url('/img/theme7/form_s01.png') no-repeat 95% 50%;
+    background: #fff url('/img/theme7/form_s01.png') no-repeat -webkit-calc(100% - 10.0px) 50%;
+    background: #fff url('/img/theme7/form_s01.png') no-repeat calc(100% - 10.0px) 50%;
+}
+
+form.myForm select.arrow_bule:focus
+{
+    background: #fff url('/img/theme7/form_s01.png') no-repeat 95% 50%;
+    background: #fff url('/img/theme7/form_s01.png') no-repeat -webkit-calc(100% - 10.4px) 50%;
+    background: #fff url('/img/theme7/form_s01.png') no-repeat calc(100% - 10.4px) 50%;
+}
+
+
+/*黒矢印*/
+form.myForm select.arrow_black
+{
+    background: #fff url('/img/theme7/form_s02.png') no-repeat 95% 50%;
+    background: #fff url('/img/theme7/form_s02.png') no-repeat -webkit-calc(100% - 10.0px) 50%;
+    background: #fff url('/img/theme7/form_s02.png') no-repeat calc(100% - 10.0px) 50%;
+}
+
+form.myForm select.arrow_black:focus
+{
+    background: #fff url('/img/theme7/form_s02.png') no-repeat 95% 50%;
+    background: #fff url('/img/theme7/form_s02.png') no-repeat -webkit-calc(100% - 10.4px) 50%;
+    background: #fff url('/img/theme7/form_s02.png') no-repeat calc(100% - 10.4px) 50%;
+}
+
+
+
+form.myForm select:first-of-type
+{
+    margin-left : 0px;
+}
+
+
+
+
+/*-------------------------------------*/
+/*  ボタン                             */
+/*-------------------------------------*/
+form.myForm input[type="submit"],
+form.myForm input[type="button"],
+form.myForm button
+{
+    padding : 10px 40px;
+    font-size : 2em;
+    font-weight : 700;
+    cursor : pointer;
+    outline:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-width: 180px;
+    margin: 0px 0.4em 0px 0.4em;
+}
+
+
+form.myForm input[type="submit"]:hover,
+form.myForm input[type="button"]:hover,
+form.myForm button:hover
+{
+    border : 0;
+    background: none;
+    background-color: #bfbfbf;
+    opacity: .7;
+}
+
+
+form.myForm div.submit
+{
+    text-align  : center;
+    margin-top : 50px;
+    padding-bottom: 50px;
+}
+
+
+/*モバイル対応時の順番入れ替え*/
+@media only screen and (max-width : 800px)
+{
+
+    form.myForm .submit
+    {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding-bottom : 50px;
+
+    }
+
+    form.myForm .submit input[type="submit"]
+    {
+        -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+
+        margin-top : 0px;
+        margin-bottom : 30px;
+        margin-left : auto;
+        margin-right : auto;
+        width : 90%;
+    }
+
+
+    form.myForm .submit button
+    {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+        margin: auto;
+        width : 90%;
+    }
+
+}
+
+
+/*-------------------------------------*/
+/*  必須                   */
+/*-------------------------------------*/
+/*確認画面の必須(表示なし)*/
+.content_confirm .required .my_column.my_left label:first-child:after,
+.content_confirm span.required:after
+{
+    content: '' !important;
+    display: none;
+}
+
+
+/*-------------------------------------*/
+/*  メッセージ枠                     */
+/*-------------------------------------*/
+/*左寄せ*/
+.caution_frame
+{
+    text-align : left;
+    margin : auto;
+    display : block;
+    padding-bottom : 30px;
+
+    width: 100%;
+    width: -webkit-calc(100% - 20px);
+    width: calc(100% - 20px);
+}
+
+/*中央寄せ*/
+.caution_frame.my_center
+{
+    text-align : center;
+}
+
+/*左寄せ*/
+.caution_frame.my_left
+{
+    text-align : left;
+}
+
+
+/*右寄せ*/
+.caution_frame.my_right
+{
+    text-align : right;
+}
+
+.caution_text
+{
+    display : inline-block;
+    text-align : left;
+}
+
+
+
+
+/*-------------------------------------*/
+/*認証コード*/
+/*-------------------------------------*/
+form.myForm .captcha_img
+{
+    margin-top : 50px;
+    text-align: center;
+}
+
+form.myForm .captcha label
+{
+    text-align: center;
+    margin-top : 20px;
+}
+
+form.myForm .captcha.required > label:first-child:before,
+form.myForm .captcha.required > label:first-child:after
+{
+    color: #e32;
+    content: '*';
+    display: inline;
+}
+
+
+form.myForm .captcha input
+{
+    width : 7em;
+    display : block;
+    margin-left : auto;
+    margin-right : auto;
+    padding: 10px;
+    vertical-align: top;
+
+    border: 1.4px solid #bfbfbf;
+    border-radius : 10px;
+    -webkit-border-radius : 10px;
+    -moz-border-radius : 10px;
+
+}
+
+form.myForm .captcha input:focus
+{
+    border-radius : 10px;
+    -webkit-border-radius : 10px;
+    -moz-border-radius : 10px;
+
+    border:#217fc4 1px solid ;
+    outline: 0;
+    padding : 10.4px; /*線を補足しているのでプラス*/
+}
+
+
+
+/*-------------------------------------*/
+/*  組み合わせデザイン                 */
+/*-------------------------------------*/
+/* 名前 */
+.name .name1
+{
+    margin-bottom : 10px;
+}
+
+
+/* expire */
+.expire div
+{
+    display: table-cell;
+    vertical-align : middle;
+}
+
+.expire select
+{
+    width : auto !important;
+}
+
+.expire .expire_year_unit,
+.expire .expire_month_unit,
+.expire .datetime_year_unit,
+.expire .datetime_month_unit
+{
+    padding-top : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+}
+
+
+.expire .expire_month,
+.expire .datetime_month
+{
+    padding-top : 0px;
+    padding-bottom : 0px;
+    padding-left : 5px;
+    padding-right : 0px;
+}
+
+
+/* 日付 */
+.date_time1 select,
+#content1 .date_time1 select,
+.date_time2 select,
+#content1 .date_time2 select
+{
+    width : auto;
+}
+
+/*-------------------------------------*/
+/*  警告表示                 */
+/*-------------------------------------*/
+#content1 #flashMessage
+{
+    color: red;
+    text-align: left;
+    font-size: 120%;
+    font-weight: bold;
+
+    padding-left: 20px;
+
+    width: 100%;
+    width: -webkit-calc(100% - 20px);
+    width: calc(100% - 20px);
+}
+
+/* 退会画面向けの微調整 */
+#content1 #flashMessage.taikai
+{
+    padding-left: 0px;
+    width: 100%;
+}
+
+/*-------------------------------------*/
+/*  汎用クラス                 */
+/*-------------------------------------*/
+.bottom50
+{
+    margin-bottom : 50px;
+}
+
+
+
+.block
+{
+    display : block;
+}
+
+/*-------------------------------------*/
+/* ポイント交換フォーム                */
+/*-------------------------------------*/
+.content_title .point_change_form_point_count,
+.content_box .point_change_form_point_count,
+.content_confirm .point_change_form_point_count,
+.content_form .point_change_form_point_count
+{
+    font-weight: bold;
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+
+
+/*操作*/
+.content_title .input_unit.point_gift .point_gift_operate,
+.content_box .input_unit.point_gift .point_gift_operate,
+.content_confirm .input_unit.point_gift .point_gift_operate,
+.content_form .input_unit.point_gift .point_gift_operate
+{
+    padding-top : 10px;
+    padding-bottom : 10px;
+    text-align: right;
+}
+
+.content_title .input_unit.point_gift .point_gift_operate input[type=submit],
+.content_box .input_unit.point_gift .point_gift_operate input[type=submit],
+.content_confirm .input_unit.point_gift .point_gift_operate input[type=submit],
+.content_form .input_unit.point_gift .point_gift_operate input[type=submit]
+{
+    margin : 0;
+}
+
+.content_title .input_unit.point_gift .point_gift_point,
+.content_box .input_unit.point_gift .point_gift_point,
+.content_confirm .input_unit.point_gift .point_gift_point,
+.content_form .input_unit.point_gift .point_gift_point
+{
+    display : inline-block;
+}
+
+
+.content_title .input_unit.point_gift .point_gift_submit,
+.content_box .input_unit.point_gift .point_gift_submit,
+.content_confirm .input_unit.point_gift .point_gift_submit,
+.content_form .input_unit.point_gift .point_gift_submit
+{
+    display : inline-block;
+    margin-left : 10px;
+}
+
+/* 交換ボタン */
+.content_title .input_unit.point_gift .point_gift_submit input[type="submit"],
+.content_box .input_unit.point_gift .point_gift_submit input[type="submit"],
+.content_confirm .input_unit.point_gift .point_gift_submit input[type="submit"],
+.content_form .input_unit.point_gift .point_gift_submit input[type="submit"]
+{
+    font-size: 1em;
+    min-width: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*メッセージ*/
+.content_title .input_unit.point_gift .point_gift_message,
+.content_box .input_unit.point_gift .point_gift_message,
+.content_confirm .input_unit.point_gift .point_gift_message,
+.content_form .input_unit.point_gift .point_gift_message
+{
+
+    border-collapse: collapse; /* 境界線の重複 */
+    margin-top : -1px;
+
+    width : 98%;
+    width : -webkit-calc(100% - 20px);
+    width : calc(100% - 20px);
+
+
+    padding-top : 10px;
+    padding-bottom : 10px;
+}
+
+.content_title .input_unit .point_gift_message .caution_frame,
+.content_box .input_unit .point_gift_message .caution_frame,
+.content_confirm .input_unit .point_gift_message .caution_frame,
+.content_form .input_unit .point_gift_message .caution_frame
+{
+    width : 98%;
+    width : -webkit-calc(100% - 0.0px);
+    width : calc(100% - 0.0px);
+}
+
+/*メッセージ*/
+.content_title .point_change_form_point_count .message,
+.content_box .point_change_form_point_count .message,
+.content_confirm .point_change_form_point_count .message,
+.content_form .point_change_form_point_count .message
+{
+    text-align: center;
+}
+
+@media only screen and (max-width : 800px)
+{
+
+    .content_title .input_unit .point_gift_message .caution_text,
+    .content_box .input_unit .point_gift_message .caution_text,
+    .content_confirm .input_unit .point_gift_message .caution_text,
+    .content_form .input_unit .point_gift_message .caution_text
+    {
+        padding : 0;
+    }
+}
+
+/*メッセージ 警告*/
+#content1 .point_change_form_point_count #flashMessage
+{
+    text-align : center;
+}
+
+/*-------------------------------------*/
+/* バックナンバー                */
+/*-------------------------------------*/
+body.back_number_page .caution_text
+{
+    display:block;
+    word-wrap: break-word;
+}
+
+
+
+/*-------------------------------------*/
+/*全体位置*/
+/*-------------------------------------*/
+.content_title,
+.content_box,
+.content_form
+{
+    margin-right : auto;
+    margin-left : auto;
+}
+
+
+
+/* color yellow */
+/*-------------------------------------*/
+/*  本文のデザイン                     */
+/*-------------------------------------*/
+#content1
+{
+    
+}
+
+
+/*-------------------------------------*/
+/*  フッター                           */
+/*-------------------------------------*/
+#footer
+{
+    color           : #FFFFFF;
+    background-color: black;
+}
+
+
+
+/*-------------------------------------*/
+/*                                     */
+/*  テーブル         */
+/*                                     */
+/*-------------------------------------*/
+.content_title th,
+.content_box th,
+.content_confirm th,
+.content_form th
+{
+    border : 1px solid #eee;
+    background  : #ffffe0;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+
+.content_title td,
+.content_box td,
+.content_confirm td,
+.content_form td
+{
+    border : none;
+    background  : inherit;
+}
+
+
+
+
+/*-------------------------------------*/
+/*                                     */
+/*  疑似テーブル表示  (ベース)         */
+/*                                     */
+/*-------------------------------------*/
+/* 2カラム用 */
+.content_title .input_unit .my_left.my_column,
+.content_box .input_unit .my_left.my_column,
+.content_confirm .input_unit .my_left.my_column,
+.content_form .input_unit .my_left.my_column,
+.content_title .input_unit .my_heading.my_column,
+.content_box .input_unit .my_heading.my_column,
+.content_confirm .input_unit .my_heading.my_column,
+.content_form .input_unit .my_heading.my_column
+{
+    background  : #ffffe0;
+    border : 1px solid #eee;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.content_title .input_unit .my_right.my_column,
+.content_box .input_unit .my_right.my_column,
+.content_confirm .input_unit .my_right.my_column,
+.content_form .input_unit .my_right.my_column
+{
+    background  : inherit;
+    border : 0px;
+}
+
+
+   
+
+
+/*-------------------------------------*/
+/*  Hタグ                              */
+/*-------------------------------------*/
+.content_title h2,
+.content_box h2,
+.content_confirm h2,
+.content_form h2
+{
+    background: black;
+    color           : #fff;
+    
+    padding-left : 10px;
+    padding-right : 10px;
+
+    width : 100%;
+    width : -webkit-calc(100% - 20px);
+    width : calc(100% - 20px);
+
+}
+
+
+.content_title h3,
+.content_box h3,
+.content_confirm h3,
+.content_form h3
+{
+    border-left: 6px solid #F9F100;
+    padding : 10px;
+
+    width : 98%;
+    width : -webkit-calc(100% - 20.0px - 23.0px);
+    width : calc(100% - 20.0px - 23.0px);    
+}
+
+
+.content_title h4,
+.content_box h4,
+.content_confirm h4,
+.content_form h4
+{
+    font-weight: bold;
+    border-bottom: 5px double #F9F100;
+    color: black;
+
+    padding-left: 4px;
+    
+    width : 98%;
+    width : -webkit-calc(100% - 24.0px);
+    width : calc(100% - 24.0px);
+    
+}
+
+.content_title h5,
+.content_box h5,
+.content_confirm h5,
+.content_form h5
+{
+    font-size: 12pt;
+    font-weight: bold;
+    border-bottom: 2px solid #F9F100;
+    padding-left: 4px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    width : 98%;
+    width : -webkit-calc(100% - 20.0px - 4.0px);
+    width : calc(100% - 20.0px - 4.0px);
+
+}
+
+/*-------------------------------------*/
+/*  ボタン                             */
+/*-------------------------------------*/
+form.myForm input[type="submit"],
+form.myForm input[type="button"],
+form.myForm button
+{
+    background : #f2921d;
+    color : #fff;
+    border : 0;
+    border-style : none;
+    border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; 
+
+}
+
+form.myForm input[type="submit"]:hover,
+form.myForm input[type="button"]:hover,
+form.myForm button:hover
+{
+    background : #f2921d;
+    opacity: 0.5;
+
+}
+
+
+/*-------------------------------------*/
+/* ポイント交換フォーム                */
+/*-------------------------------------*/  
+.content_title .input_unit.point_gift .point_gift_operate,
+.content_box .input_unit.point_gift .point_gift_operate,
+.content_confirm .input_unit.point_gift .point_gift_operate,
+.content_form .input_unit.point_gift .point_gift_operate
+{
+    border : 0;
+}
+
+
+.content_title .input_unit.point_gift .point_gift_operate,
+.content_box .input_unit.point_gift .point_gift_operate,
+.content_confirm .input_unit.point_gift .point_gift_operate,
+.content_form .input_unit.point_gift .point_gift_operate
+{
+    width : 98%;
+    width : -webkit-calc(100% - 30.0px);
+    width : calc(100% - 30.0px);
+}
+
+
+.content_title .input_unit.point_gift .my_heading.my_column.point_gift_name,
+.content_box .input_unit.point_gift .my_heading.my_column.point_gift_name,
+.content_confirm .input_unit.point_gift .my_heading.my_column.point_gift_name,
+.content_form .input_unit.point_gift .my_heading.my_column.point_gift_name
+{
+    font-weight: bold;
+    
+    border-top : 0;
+    border-bottom: 3px double #F9F100;
+    border-left: 0;
+    border-right: 0;
+
+    padding-bottom: 0;
+    padding-left: 4px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    width : 98%;
+    width : -webkit-calc(100% - 20.0px - 4.0px);
+    width : calc(100% - 20.0px - 4.0px);
+    
+    background : none;
+}
+  
+
+
+
