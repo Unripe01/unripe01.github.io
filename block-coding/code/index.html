@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unripe01 Profile Page</title>
 
-    <!-- import Nomalize.css -->
+    <!-- import Normalize.css -->
     <link rel="stylesheet" href="stylesheets/normalize.css">
 
     <!-- import My Style -->
@@ -26,30 +26,30 @@
         <!-- ロゴ -->
         <div class="header-logo">
             <img src="images/image-logo.svg" alt="logo">
-            <span class="header-logo-title">Developer</span>
+            <span class="header-logo-title">Backend/Developer</span>
         </div>
         <!-- ナビゲーション-->
         <nav class="header-nav">
             <ul class="header-nav-menu">
-                <li class="header-nav-menu-item"><a href="">Home</a></li>
-                <li class="header-nav-menu-item"><a href="">Works</a></li>
-                <li class="header-nav-menu-item"><a href="">About</a></li>
-                <li class="header-nav-menu-item"><a href="">Contact</a></li>
+                <li class="header-nav-menu-item"><a href="#home">Home</a></li>
+                <li class="header-nav-menu-item"><a href="#works">Works</a></li>
+                <li class="header-nav-menu-item"><a href="#about">About</a></li>
+                <li class="header-nav-menu-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main">
+    <main id="home" class="main">
         <!-- section hero -->
         <section class="main-hero">
             <div class="container">
                 <!-- main hero highlight -->
                 <div class="main-hero-highlight">
                     <h1>
-                        I'm <strong>Unripe01</strong>, a <strong>Developer</strong> based in Osaka Japan.
+                        I'm <strong>Unripe01</strong>, a <strong>Backend/Developer</strong> based in Osaka Japan.
                     </h1>
                     <div class="main-hero-highlight-links">
-                        <p>このポートフォリオのコードは<a href="" target="_blank">こちら</a>にまとまっています。<br>お問い合わせは<a href=""
+                        <p>このポートフォリオのコードは<a href="" target="_blank">こちら</a>にまとまっています。<br>お問い合わせは<a href="#contact"
                                 target="_blank">コンタクトフォーム</a>からどうぞ :)</p>
                         <ul class="social-links">
                             <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -69,7 +69,7 @@
         </section>
 
         <!-- section works -->
-        <section class="main-works">
+        <section id="works" class="main-works">
             <h2><i class="fas fa-palette"></i>Works</h2>
             <div class="container">
                 <!-- main works 1 -->
@@ -113,20 +113,107 @@
         </section>
 
         <!-- section about -->
-        <section class="main-about">
+        <section id="about" class="main-about">
+            <h2><i class="fas fa-icons"></i>About</h2>
+            <figure class="main-about-img">
+                <img class="mobile" src="images/image-profile.jpg" alt="about">
+                <img class="tablet-and-up" src="images/image-about.jpg" alt="about">
+            </figure>
+            <div class="container">
+                <div class="main-about-description">
+                    <h3>自己紹介</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis ipsam, iure obcaecati
+                        vero rem magni illum repudiandae ullam, consectetur autem! Maiores perspiciatis mollitia
+                        voluptatibus sit ut necessitatibus provident optio.</p>
+                </div>
+                <div class="main-about-addition">
+                    <h3>スキルセット</h3>
+                    <div class="main-about-addition-skills">
+                        <ul>
+                            <li>Infrastructure</li>
+                            <li>Database</li>
+                            <li>Cloud Services</li>
+                        </ul>
+                        <ul>
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                        </ul>
+                        <ul>
+                            <li>CSS3</li>
+                            <li>System Design</li>
+                            <li>Micro Servises</li>
+                        </ul>
+                    </div>
+                    <h3>関連リンク</h3>
+                    <div class="main-about-addition-follow">
+                        <ul class="social-links">
+                            <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-medium"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div></div>
+            </div>
         </section>
-
-
-
-
-
-
-
-
     </main>
 
-    <footer class="footer">
-        <!-- <a href="" class="hero-content-button">Contact</a> -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <!-- footer form -->
+            <div class="footer-form">
+                <p>お仕事の依頼やご相談、お問い合わせはこちらからどうぞ。</p>
+                <form action="/action/" method="post" name="contact-form">
+                    <!-- name -->
+                    <div class="footer-form-input">
+                        <i class="far fa-user"></i><input type="text" name="name" placeholder="氏名">
+                    </div>
+                    <!-- email -->
+                    <div class="footer-form-input">
+                        <i class="far fa-envelope"></i><input type="email" name="email" placeholder="メールアドレス">
+                    </div>
+                    <!-- message -->
+                    <div class="footer-form-textarea">
+                        <textarea name="message" placeholder="お問い合わせ内容"></textarea>
+                    </div>
+                    <!-- submit -->
+                    <input type="submit" value="送信する" class="button-primary">
+                </form>
+            </div>
+
+            <!-- fooder info -->
+            <div class="footer-info">
+                <div class="footer-info-nav">
+                    <img src="images/image-logo.svg" alt="logo" class="footer-info-nav-img">
+                    <nav class="footer-info-nav-menu">
+                        <ul>
+                            <ui><a href="#home">Home</a></ui>
+                            <ui><a href="#works">Works</a></ui>
+                            <ui><a href="#about">About</a></ui>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-info-follow">
+                    <!-- social-links -->
+                    <ul class="social-links">
+                        <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-medium"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-copy">
+                    <!-- Copyright -->
+                    <p>&copy; 2023 Unripe01</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>
