@@ -69,9 +69,83 @@ textarea {
 input[type="submit"] {
   cursor: pointer;
 }
+
 /* Reusable Classes */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.button-primary,
+.button-secondary {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  color: #fff7f7;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.button-primary {
+  background-color: #53687e;
+}
+.button-secondary {
+  background-color: #6b4e71;
+}
+.button-primary:hover,
+.button-primary:focus {
+  background-color: #495b6f;
+}
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: #5d4462;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+}
+
+.social-links li + li {
+  margin-left: 20px;
+}
 
 /* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background-color: #6b4e71;
+  color: #fff7f7;
+  font-family: "Piazzolla", "Times New Roman", "YuMincho",
+    "Hiragino Mincho RroN", "Yu Mincho", "MS PMincho", Times, serif;
+  font-weight: 700;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-menu {
+  display: flex;
+}
+
+.header-nav-menu-item > a {
+  color: #fff7f7;
+}
+
+.header-nav-menu-item > a:hover,
+.header-nav-menu-item > a:focus {
+  color: #ffc4c4;
+}
 
 /* Main - Hero */
 
