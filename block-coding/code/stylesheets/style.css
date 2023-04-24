@@ -31,7 +31,7 @@ h3 {
 
 h1 {
   margin-top: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h2 {
@@ -63,7 +63,7 @@ a {
 a,
 input,
 textarea {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 input[type="submit"] {
@@ -148,9 +148,151 @@ input[type="submit"] {
 }
 
 /* Main - Hero */
+.main-hero {
+  background-color: #6b4e71;
+}
+.main-hero-highlight,
+.main-hero-highlight a {
+  color: #fff7f7;
+}
+
+.main-hero-highlight-links p {
+  font-size: 1.2rem;
+}
+.main-hero-highlight-links p > a {
+  text-decoration: underline;
+}
+.main-hero-highlight-links a:hover,
+.main-hero-highlight-links a:focus {
+  color: #ffc4c4;
+}
 
 /* Main - Works */
+.main-works {
+  background-color: #fff7f7;
+}
+
+.main-works-item:last-child {
+  margin-bottom: 0;
+}
+
+.main-works-item-img img {
+  border-radius: 5px;
+}
+
+.main-works-item-img.primary img {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 15%), 10px 10px 0 #53687e;
+}
+
+.main-works-item-img.secondary img {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 15%), 10px 10px 0 #6b4e71;
+}
 
 /* Main - About */
+.main-about {
+  background-color: #fff;
+}
+
+.main-about-addition-skills ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.main-about-addition-follow a {
+  color: #c2b2b4;
+}
+
+.main-about-addition-follow a:hover,
+.main-about-addition-follow a:focus {
+  color: #ab9698;
+}
 
 /* Footer */
+.footer {
+  background-color: #3a4454;
+  color: #fff7f7;
+}
+
+.footer-form form,
+.footer-form input,
+.footer-form textarea {
+  width: 100%;
+}
+
+.footer-form-input {
+  position: relative;
+}
+
+.footer-form-input i {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: #fff7f7;
+}
+
+.footer-form-input input {
+  padding: 10px 15px 10px 40px;
+}
+
+.footer-form-textarea textarea {
+  height: 150px;
+  padding: 10px 15px;
+  resize: none;
+}
+
+.footer-form-input input,
+.footer-form-textarea textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #c2b2b4;
+  border-radius: 5px;
+  color: #fff7f7;
+}
+
+.footer-form-input input::placeholder,
+.footer-form-textarea textarea::placeholder {
+  color: #9c9da5;
+}
+
+.footer-form-input input:hover,
+.footer-form-input input:focus,
+.footer-form-textarea textarea:hover,
+.footer-form-textarea textarea:focus {
+  border-color: rgba(0, 0, 0, 10%);
+}
+
+.footer-form-input input:focus-visible,
+.footer-form-textarea textarea:focus-visible {
+  outline: 1px solid #c2b2b4;
+  border: 1px solid #c2b2b4;
+}
+
+.footer-info-nav-menu ul {
+  font-family: "Piazzolla", "Times New Roman", "YuMincho",
+    "Hiragino Mincho RroN", "MS PMincho", serif;
+}
+
+.footer-info-nav-menu a {
+  color: #fff7f7;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer-info-nav-menu a:hover,
+.footer-info-nav-menu a:focus {
+  color: #9c9da5;
+}
+
+.footer-info-follow a {
+  color: #9c9da5;
+  font-size: 1.5rem;
+}
+
+.footer-info-follow a:hover,
+.footer-info-follow a:focus {
+  color: #81838d;
+}
+
+.footer-info-copy {
+  color: #9c9da5;
+}
