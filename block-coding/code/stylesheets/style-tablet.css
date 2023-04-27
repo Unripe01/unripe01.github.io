@@ -1,13 +1,35 @@
 /*--- Tablet Styling ---*/
 
-/* Reusable Classes */
+@media screen and (min-width: 48em) {
+  h1,
+  h2 {
+    font-size: 2.25rem;
+  }
 
-/* Header */
+  h1 {
+    margin-bottom: 40px;
+  }
 
-/* Main - Hero */
+  h2 {
+    margin-bottom: 60px;
+  }
 
-/* Main - Works */
+  h2 > i {
+    margin-right: 20px;
+  }
 
-/* Main - About */
+  /* Reusable Classes */
+  .container {
+    padding: 0 40px;
+  }
 
-/* Footer */
+  /* Header */
+
+  /* Main - Hero */
+
+  /* Main - Works */
+
+  /* Main - About */
+
+  /* Footer */
+}
