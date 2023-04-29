@@ -76,8 +76,7 @@ input[type="submit"] {
   margin: 0 auto;
 }
 
-.button-primary,
-.button-secondary {
+.button {
   display: inline-block;
   padding: 10px 15px;
   border: none;
@@ -95,6 +94,7 @@ input[type="submit"] {
 .button-secondary {
   background-color: #6b4e71;
 }
+
 .button-primary:hover,
 .button-primary:focus {
   background-color: #495b6f;
