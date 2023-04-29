@@ -214,8 +214,8 @@ input[type="submit"] {
 }
 
 .footer-form form,
-.footer-form input,
-.footer-form textarea {
+.footer-form-input,
+.footer-form-textarea {
   width: 100%;
 }
 
