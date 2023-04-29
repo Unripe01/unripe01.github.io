@@ -8,7 +8,8 @@
     <title>Unripe01 Profile Page</title>
 
     <!-- import Normalize.css -->
-    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <!-- <link rel="stylesheet" href="stylesheets/normalize.css"> -->
+    <link rel="stylesheet" href="https://unripe01.github.io/block-coding/code/stylesheets/normalize.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +18,17 @@
         href="https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,400;8..30,700&display=swap">
 
     <!-- import My Styles -->
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <!-- <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/style-mobile.css">
     <link rel="stylesheet" href="stylesheets/style-tablet.css">
-    <link rel="stylesheet" href="stylesheets/style-laptop.css">
+    <link rel="stylesheet" href="stylesheets/style-laptop.css"> -->
+    <link rel="stylesheet" href="https://unripe01.github.io/block-coding/code/stylesheets/style.css">
+    <link rel="stylesheet" href="https://unripe01.github.io/block-coding/code/stylesheets/style-mobile.css">
+    <link rel="stylesheet" href="https://unripe01.github.io/block-coding/code/stylesheets/style-tablet.css.css">
+    <link rel="stylesheet" href="https://unripe01.github.io/block-coding/code/stylesheets/style-laptop.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/png">
+    <link rel="icon" href="images/favicon.png" type="image/png">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/57531ccacc.js" crossorigin="anonymous"></script>
@@ -34,7 +39,7 @@
     <header class="header">
         <!-- ロゴ -->
         <div class="header-logo">
-            <img class="header-logo-img" src="images/image-logo.svg" alt="logo">
+            <img class="header-logo-img" src="images/logo.svg" alt="logo">
             <span class="header-logo-title">Backend/Developer</span>
         </div>
         <!-- ナビゲーション-->
@@ -51,24 +56,26 @@
     <main id="home" class="main">
         <!-- section hero -->
         <section class="main-hero">
-            <div class="container">
+            <div class="main-hero-container container">
                 <!-- main hero highlight -->
                 <div class="main-hero-highlight">
                     <h1>
-                        I'm <strong>Unripe01</strong>, a <strong>Backend/Developer</strong> based
+                        <strong>Unripe01</strong>, a <strong>Backend/Developer</strong> based
                         in
                         Osaka Japan.
                     </h1>
                     <div class="main-hero-highlight-links">
-                        <p>このポートフォリオのコードは<a href="" target="_blank">こちら</a>にまとまっています。<br>お問い合わせは<a href="#contact"
-                                target="_blank">コンタクトフォーム</a>からどうぞ :)</p>
+                        <p>バックエンドエンジニアが作成したポートフォリオです。
+                            <br>コードは<a href="https://github.com/Unripe01/unripe01.github.io/tree/main/block-coding"
+                                target="_blank">こちら</a>にまとまっています。
+                            <br>ロゴや画像などはGIMPで作成しています。
+                        </p>
                         <ul class="social-links">
-                            <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-medium"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://github.com/Unripe01" target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/ripe_dev" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -89,16 +96,12 @@
                         <img src="images/image-work-a3.jpg" alt="Work A">
                     </figure>
                     <div class="main-works-item-text">
-                        <h3>過去のお仕事１</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ut harum voluptatum. Sit
-                            alias omnis delectus sequi accusantium, mollitia eligendi voluptatibus nemo eaque ex illo
-                            ipsa quibusdam cum nam id ducimus, non facere architecto eius soluta obcaecati! Repellendus,
-                            aspernatur nesciunt.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ut harum voluptatum. Sit
-                            alias omnis delectus sequi accusantium, mollitia eligendi voluptatibus nemo eaque ex illo
-                            ipsa quibusdam cum nam id ducimus, non facere architecto eius soluta obcaecati! Repellendus,
-                            aspernatur nesciunt.</p>
-                        <a href="#" class="button-primary">もっと読む</a>
+                        <h3>最近の仕事１</h3>
+                        <p>経営分析のためのレポート作成。
+                            <br>自社サービスのユニットエコノミクス分析用レポートや、カスタムディメンションを用いたGAのアトリビューション分析レポートを作成しています。
+                        </p>
+                        <p>データの扱いはBigQueryで行っており、AWS RDSにあるデータを連携するためにEMBulkの構築も行っています。</p>
+                        <a href="#" class="button button-primary">もっと読む</a>
                     </div>
                 </div>
 
@@ -108,16 +111,17 @@
                         <img src="images/image-work-b.jpg" alt="Work B">
                     </figure>
                     <div class="main-works-item-text">
-                        <h3>過去のお仕事２</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta hic ratione
-                            reprehenderit distinctio, eum dicta harum repudiandae aspernatur officiis consequatur
-                            voluptatibus, natus, ad repellendus possimus consequuntur assumenda! Obcaecati, sapiente!
+                        <h3>最近の仕事２</h3>
+                        <p>自社プロダクトの新機能開発。
+                            <br>主にバックエンドの開発を担当していますが、フロントエンドの開発も少しずつ行っています。
+                            <br>チームリーダーとして、開発の進捗管理や、新人エンジニアの育成も行っています。
                         </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta hic ratione
-                            reprehenderit distinctio, eum dicta harum repudiandae aspernatur officiis consequatur
-                            voluptatibus, natus, ad repellendus possimus consequuntur assumenda! Obcaecati, sapiente!
+                        <p>主な開発環境はTypeScript、MySQLです。
+                            <br>バックエンドフレームワークはApollo Server + GraphQL
+                            <br>フロントエンドフレームワークはNext.js + Reactです。
+                            <br>AWSインフラストラクチャの設計や実装も行っています。
                         </p>
-                        <a href="#" class="button-secondary">もっと読む</a>
+                        <a href="#" class="button button-secondary">もっと読む</a>
                     </div>
                 </div>
             </div>
@@ -130,22 +134,26 @@
                 <img class="mobile" src="images/image-profile.jpg" alt="about">
                 <img class="tablet-and-up" src="images/image-about.jpg" alt="about">
             </figure>
-            <div class="container">
+            <div class="main-about-container container">
                 <div class="main-about-description">
                     <h3>自己紹介</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis ipsam, iure obcaecati
-                        vero rem magni illum repudiandae ullam, consectetur autem! Maiores perspiciatis mollitia
-                        voluptatibus sit ut necessitatibus provident optio.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis ipsam, iure obcaecati
-                        vero rem magni illum repudiandae ullam, consectetur autem! Maiores perspiciatis mollitia
-                        voluptatibus sit ut necessitatibus provident optio.</p>
+                    <p>Unripe01と申します。
+                        <br>大阪でバックエンドエンジニアとして働いています。
+                        <br>最近はフロントエンドの勉強もしています。
+                        <br>自社プロダクトの機能開発を行っており、チームリーダーとして奮闘中。
+                        <br>データベースの設計や、AWSインフラの設計も行っています。
+                        <br>DBやBIツールの構築も得意なので、データレイクからDWHや経営分用レポートの作成も行っています。
+                    </p>
+                    <p>
+                        このサイトは、ポートフォリオとして作成しました。
+                    </p>
                 </div>
                 <div class="main-about-addition">
                     <h3>スキルセット</h3>
                     <div class="main-about-addition-skills">
                         <ul>
-                            <li>Infrastructure</li>
                             <li>Database</li>
+                            <li>AWS</li>
                             <li>Cloud Services</li>
                         </ul>
                         <ul>
@@ -154,20 +162,19 @@
                             <li>HTML</li>
                         </ul>
                         <ul>
-                            <li>CSS3</li>
+                            <li>BigQuery DataAnalytics</li>
+                            <li>Micro Services</li>
                             <li>System Design</li>
-                            <li>Micro Servises</li>
                         </ul>
                     </div>
                     <h3>関連リンク</h3>
                     <div class="main-about-addition-follow">
                         <ul class="social-links">
-                            <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-medium"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://github.com/Unripe01" target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/ripe_dev" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -177,10 +184,10 @@
     </main>
 
     <footer id="contact" class="footer">
-        <div class="container">
+        <div class="footer-container container">
             <!-- footer form -->
             <div class="footer-form">
-                <p>お仕事の依頼やご相談、お問い合わせはこちらからどうぞ。</p>
+                <p>お仕事のご依頼やご相談など、お問い合わせはこちらからどうぞ。</p>
                 <form action="/action/" method="post" name="contact-form">
                     <!-- name -->
                     <div class="footer-form-input">
@@ -195,14 +202,14 @@
                         <textarea name="message" placeholder="お問い合わせ内容"></textarea>
                     </div>
                     <!-- submit -->
-                    <input type="submit" value="送信する" class="button-primary">
+                    <input type="submit" value="送信する" class="button button-primary">
                 </form>
             </div>
 
-            <!-- fooder info -->
+            <!-- footer info -->
             <div class="footer-info">
                 <div class="footer-info-nav">
-                    <img src="images/image-logo.svg" alt="logo" class="footer-info-nav-img">
+                    <img src="images/logo.svg" alt="logo" class="footer-info-nav-img">
                     <nav class="footer-info-nav-menu">
                         <ul>
                             <li><a href="#home">Home</a></li>
@@ -214,18 +221,16 @@
                 <div class="footer-info-follow">
                     <!-- social-links -->
                     <ul class="social-links">
-                        <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
-                        <li><a href="" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-                        <li><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="" target="_blank"><i class="fab fa-medium"></i></a></li>
-                        <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/Unripe01" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/ripe_dev" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
                     </ul>
                 </div>
-                <div class="footer-info-copy">
-                    <!-- Copyright -->
-                    <p>&copy; 2023 Unripe01</p>
-                </div>
+                <p class="footer-info-copy">
+                    <small>&copy; 2023 Unripe01</small>
+                </p>
             </div>
         </div>
     </footer>
