@@ -152,4 +152,11 @@
   .footer-info-copy {
     margin-bottom: 0px;
   }
+
+  /* --------------------------------------
+  Page - Work
+  -------------------------------------- */
+  .main-article {
+    padding: 100px 0;
+  }
 }
