@@ -51,10 +51,10 @@
   }
 
   .main-works-item-img.primary img {
-    box-shadow: 1px 1px 10px rgb(0, 0, 0, 15%), 30px 30px 0 #53687e;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 15%), 30px 30px 0 #464e47;
   }
   .main-works-item-img.secondary img {
-    box-shadow: 1px 1px 10px rgb(0, 0, 0, 15%), 30px 30px 0 #6b4e71;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 15%), 30px 30px 0 #7a2739;
   }
 
   /* Main - About */

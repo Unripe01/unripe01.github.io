@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  color: #3a4454;
+  color: #13293d;
   font-family: "Helvetica Neue", "Helvetica", "'Hiragino San",
     "Hiragino Kaku Gothic ProN", Arial, "Yu Gothic", "Meiryo", sans-serif;
 }
@@ -81,7 +81,7 @@ input[type="submit"] {
   padding: 10px 15px;
   border: none;
   border-radius: 3px;
-  color: #fff7f7;
+  color: #f5f5f5;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -89,10 +89,10 @@ input[type="submit"] {
 }
 
 .button-primary {
-  background-color: #53687e;
+  background-color: #464e47;
 }
 .button-secondary {
-  background-color: #6b4e71;
+  background-color: #7a2739;
 }
 
 .button-primary:hover,
@@ -122,8 +122,8 @@ input[type="submit"] {
   position: fixed;
   z-index: 2;
   width: 100%;
-  background-color: #6b4e71;
-  color: #fff7f7;
+  background-color: #7a2739;
+  color: #f5f5f5;
   font-family: "Piazzolla", "Times New Roman", "YuMincho",
     "Hiragino Mincho RroN", "Yu Mincho", "MS PMincho", Times, serif;
   font-weight: 700;
@@ -139,7 +139,7 @@ input[type="submit"] {
 }
 
 .header-nav-menu-item > a {
-  color: #fff7f7;
+  color: #f5f5f5;
 }
 
 .header-nav-menu-item > a:hover,
@@ -149,11 +149,11 @@ input[type="submit"] {
 
 /* Main - Hero */
 .main-hero {
-  background-color: #6b4e71;
+  background-color: #7a2739;
 }
 .main-hero-highlight,
 .main-hero-highlight a {
-  color: #fff7f7;
+  color: #f5f5f5;
 }
 
 .main-hero-highlight-links p {
@@ -169,7 +169,7 @@ input[type="submit"] {
 
 /* Main - Works */
 .main-works {
-  background-color: #fff7f7;
+  background-color: #f5f5f5;
 }
 
 .main-works-item:last-child {
@@ -181,16 +181,16 @@ input[type="submit"] {
 }
 
 .main-works-item-img.primary img {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 15%), 10px 10px 0 #53687e;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 15%), 10px 10px 0 #464e47;
 }
 
 .main-works-item-img.secondary img {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 15%), 10px 10px 0 #6b4e71;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 15%), 10px 10px 0 #7a2739;
 }
 
 /* Main - About */
 .main-about {
-  background-color: #fff;
+  background-color: #e8e9ed;
 }
 
 .main-about-addition-skills ul {
@@ -209,8 +209,8 @@ input[type="submit"] {
 
 /* Footer */
 .footer {
-  background-color: #3a4454;
-  color: #fff7f7;
+  background-color: #13293d;
+  color: #f5f5f5;
 }
 
 .footer-form form,
@@ -227,7 +227,7 @@ input[type="submit"] {
   position: absolute;
   top: 12px;
   left: 16px;
-  color: #fff7f7;
+  color: #f5f5f5;
 }
 
 .footer-form-input input {
@@ -246,12 +246,12 @@ input[type="submit"] {
   background-color: transparent;
   border: 1px solid #c2b2b4;
   border-radius: 5px;
-  color: #fff7f7;
+  color: #f5f5f5;
 }
 
 .footer-form-input input::placeholder,
 .footer-form-textarea textarea::placeholder {
-  color: #9c9da5;
+  color: #8b949c;
 }
 
 .footer-form-input input:hover,
@@ -273,18 +273,18 @@ input[type="submit"] {
 }
 
 .footer-info-nav-menu a {
-  color: #fff7f7;
+  color: #f5f5f5;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
 .footer-info-nav-menu a:hover,
 .footer-info-nav-menu a:focus {
-  color: #9c9da5;
+  color: #8b949c;
 }
 
 .footer-info-follow a {
-  color: #9c9da5;
+  color: #8b949c;
   font-size: 1.5rem;
 }
 
@@ -294,7 +294,7 @@ input[type="submit"] {
 }
 
 .footer-info-copy {
-  color: #9c9da5;
+  color: #8b949c;
 }
 
 /* --------------------------------------
