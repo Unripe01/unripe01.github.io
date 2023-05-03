@@ -296,3 +296,30 @@ input[type="submit"] {
 .footer-info-copy {
   color: #9c9da5;
 }
+
+/* --------------------------------------
+  Page - Work
+-------------------------------------- */
+.work h1 {
+  margin-bottom: 0;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "Meiryo",
+    sans-serif;
+}
+
+.main-article-container {
+  max-width: 750px;
+}
+
+.main-article-topic {
+  margin-bottom: 60px;
+}
+
+.main-article-topic:last-child {
+  margin-bottom: 0;
+}
+
+.main-article-topic img {
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
