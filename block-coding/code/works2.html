@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Page</title>
+
+    <!-- import css -->
+    <!-- <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/style-mobile.css">
+    <link rel="stylesheet" href="stylesheets/style-tablet.css">
+    <link rel="stylesheet" href="stylesheets/style-laptop.css"> -->
+    <!-- for github  -->
+    <link rel="stylesheet" href="https://unripe01.github.io/block-coding/code/stylesheets/normalize.css">
+    <link rel="stylesheet" href="https://unripe01.github.io/block-coding/code/stylesheets/style.css">
+    <link rel="stylesheet" href="https://unripe01.github.io/block-coding/code/stylesheets/style-mobile.css">
+    <link rel="stylesheet" href="https://unripe01.github.io/block-coding/code/stylesheets/style-tablet.css">
+    <link rel="stylesheet" href="https://unripe01.github.io/block-coding/code/stylesheets/style-laptop.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,400;8..30,700&display=swap">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/57531ccacc.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="work">
+
+    <header class="header">
+        <!-- ロゴ -->
+        <div class="header-logo">
+            <a href="index.html"><img class="header-logo-img" src="images/logo.svg" alt="logo"></a>
+            <span class="header-logo-title">Backend/Developer</span>
+        </div>
+        <!-- ナビゲーション-->
+        <nav class="header-nav">
+            <ul class="header-nav-menu">
+                <li class="header-nav-menu-item"><a href="index.html#home">Home</a></li>
+                <li class="header-nav-menu-item"><a href="index.html#works">Works</a></li>
+                <li class="header-nav-menu-item"><a href="index.html#about">About</a></li>
+                <li class="header-nav-menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- section hero -->
+        <section class="main-hero">
+            <div class="main-hero-container container">
+                <!-- main hero highlight -->
+                <div class="main-hero-highlight">
+                    <h1>
+                        自社プロダクト機能開発
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <!-- job details -->
+        <section class="main-article">
+            <h2><i class="far fa-file-alt"></i>Project Details</h2>
+            <div class="container main-article-container">
+                <!-- topic 1 -->
+                <div class="main-article-topic">
+                    <img src="images/image-work-a1.jpg" alt="WorkA1">
+                    <h3>改善点の洗い出し</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, iusto? Delectus id, sed autem
+                        dolorem quisquam facilis voluptates molestiae dolore facere itaque reiciendis incidunt adipisci
+                        ea voluptate ex aspernatur explicabo.</p>
+                </div>
+                <!-- topic 2 -->
+                <div class="main-article-topic">
+                    <img src="images/image-work-a2.jpg" alt="WorkA2">
+                    <h3>解決案の検討</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, iusto? Delectus id, sed autem
+                        dolorem quisquam facilis voluptates molestiae dolore facere itaque reiciendis incidunt adipisci
+                        ea voluptate ex aspernatur explicabo.</p>
+                </div>
+                <!-- topic 3 -->
+                <div class="main-article-topic">
+                    <img src="images/image-work-a3.jpg" alt="WorkA3">
+                    <h3>最終結果</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, iusto? Delectus id, sed autem
+                        dolorem quisquam facilis voluptates molestiae dolore facere itaque reiciendis incidunt adipisci
+                        ea voluptate ex aspernatur explicabo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="footer-container container">
+            <!-- footer form -->
+            <div class="footer-form">
+                <p>お仕事のご依頼やご相談など、お問い合わせはこちらからどうぞ。</p>
+                <form action="/action/" method="post" name="contact-form">
+                    <!-- name -->
+                    <div class="footer-form-input">
+                        <i class="far fa-user"></i><input type="text" name="name" placeholder="氏名">
+                    </div>
+                    <!-- email -->
+                    <div class="footer-form-input">
+                        <i class="far fa-envelope"></i><input type="email" name="email" placeholder="メールアドレス">
+                    </div>
+                    <!-- message -->
+                    <div class="footer-form-textarea">
+                        <textarea name="message" placeholder="お問い合わせ内容"></textarea>
+                    </div>
+                    <!-- submit -->
+                    <input type="submit" value="送信する" class="button button-primary">
+                </form>
+            </div>
+
+            <!-- footer info -->
+            <div class="footer-info">
+                <div class="footer-info-nav">
+                    <img src="images/logo.svg" alt="logo" class="footer-info-nav-img">
+                    <nav class="footer-info-nav-menu">
+                        <ul>
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#works">Works</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-info-follow">
+                    <!-- social-links -->
+                    <ul class="social-links">
+                        <li><a href="https://github.com/Unripe01" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/ripe_dev" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <p class="footer-info-copy">
+                    <small>&copy; 2023 Unripe01</small>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
