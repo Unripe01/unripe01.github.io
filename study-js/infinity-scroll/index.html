@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS ローカル対応 -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unripe01.github.io/study-js/infinity-scroll/style.css">
+    <title>無限スクロール</title>
+</head>
+
+<body>
+    <div class="scroll container" data-last="12">
+        <h1>大量データ</h1>
+        <div class="item" data-item-no="1">1</div>
+        <div class="item" data-item-no="2">2</div>
+        <div class="item" data-item-no="3">3</div>
+        <div class="item" data-item-no="4">4</div>
+        <div class="item" data-item-no="5">5</div>
+        <div class="item" data-item-no="6">6</div>
+        <div class="item" data-item-no="7">7</div>
+        <div class="item" data-item-no="8">8</div>
+        <div class="item" data-item-no="9">9</div>
+        <div class="item" data-item-no="10">10</div>
+        <div class="item" data-item-no="11">11</div>
+        <div class="item" data-item-no="12">12</div>
+    </div>
+</body>
+
+
+<script>
+    document.querySelectorAll('.scroll').forEach(elm => {
+        elm.onscroll = function () {
+            //スクロールが末尾に達した判定
+            if (this.scrollTop + this.clientHeight >= this.scrollHeight) {
+                // 10こほど要素を追加する。
+                for (let i = 0; i < 10; i++) {
+                    this.dataset.last = parseInt(this.dataset.last) + 1;
+                    let item = document.createElement('div');
+                    item.className = "item"
+                    item.setAttribute('data-item-no', this.dataset.last);
+                    item.innerText = this.dataset.last;
+                    this.appendChild(item);
+                }
+            }
+        };
+    });
+</script>
+
+
+
+</html>

@@ -13,7 +13,3 @@ body {
   width: min(100% - 2rem, 640px);
   margin-inline: auto;
 }
-
-.hero {
-  border: black solid 1px;
-}
