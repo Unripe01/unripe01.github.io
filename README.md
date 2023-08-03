@@ -13,4 +13,6 @@
 [https://unripe01.github.io/react-navbar](https://unripe01.github.io/react-navbar)
 [https://unripe01.github.io/responsive](https://unripe01.github.io/responsive)
 [https://unripe01.github.io/snow](https://unripe01.github.io/snow)
+[https://unripe01.github.io/study-css](https://unripe01.github.io/study-css)
+[https://unripe01.github.io/study-js](https://unripe01.github.io/study-js)
 [https://unripe01.github.io/typekeybord](https://unripe01.github.io/typekeybord)
