@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: min(100% - 2rem, 640px);
+  margin-inline: auto;
+}
+
+.hero {
+  border: black solid 1px;
+}
