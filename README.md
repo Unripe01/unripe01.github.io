@@ -18,6 +18,8 @@
 
 [https://unripe01.github.io/responsive](https://unripe01.github.io/responsive)
 
+[https://unripe01.github.io/snipets](https://unripe01.github.io/snipets)
+
 [https://unripe01.github.io/snow](https://unripe01.github.io/snow)
 
 [https://unripe01.github.io/study-css](https://unripe01.github.io/study-css)
