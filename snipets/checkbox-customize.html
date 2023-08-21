@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>チェックボックスのカスタマイズ</title>
 
     <style>
-        input[type="checkbox"]{
-            opacity: 0;
-            -webkit-appearance: none;
-            appearance: none;
-            position: absolute;
+        input[type="checkbox"] {
+            display: none;
         }
 
-        input[type="checkbox"] + span{
-            display: inline-flex;
+        input[type="checkbox"]+span {
+            display: flex;
             align-items: center;
-            font-size: 1rem;
+            gap: 10px;
+            font-size: 2rem;
         }
 
-        input[type="checkbox"] + span::before{
-            display: inline-flex;
+        input[type="checkbox"]+span::before {
+            display: flex;
             content: "🙅‍♀";
             width: 5rem;
             height: 5rem;
             border: 1px solid #413939;
             background: #dad9d2;
-            margin: -.125rem .5rem 0 0;
             justify-content: center;
             align-items: center;
-            font-size: 3rem;
+            font-size: 4rem;
         }
-        
-        input[type="checkbox"]:checked + span::before{
+
+        input[type="checkbox"]:checked + span::before {
             content: "🙆‍♀";
             background: #c6b0b0;
         }
     </style>
 </head>
+
 <body>
-    
-<label>
-    <input type="checkbox" name="" id="">
-    <span>いけた？？</span>
-</label>
+
+    <label>
+        <input type="checkbox" name="" id="">
+        <span>いけた？？</span>
+    </label>
 </body>
+
 </html>
