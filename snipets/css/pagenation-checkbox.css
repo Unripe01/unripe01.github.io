@@ -6,7 +6,7 @@
 
 .container {
     width: min(100% - 2rem, 640px);
-    margin: 10rem auto;
+    margin: 5rem auto;
     margin-inline: auto;
     padding: 0;
 }
@@ -31,7 +31,6 @@
     display: inline;
     /* 横並びに */
     flex-direction: row;
-    
 }
 
 .pagination-link li + li::before {
@@ -45,4 +44,21 @@
 .debug textarea{
     width: 100%;
     height: auto;
+}
+
+/* スマートフォン用のCSS */
+@media (max-width: 480px) {
+    .container {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .pagination-link li + li::before {
+        content: '';
+        margin-left: 1rem;
+    }
+    .debug {
+        margin-top: 0.5rem;
+    }
+    
 }
