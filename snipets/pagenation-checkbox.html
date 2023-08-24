@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unripe01.github.io/snipets/css/pagenation-checkbox.css">
+    <link rel="stylesheet" href="css/pagenation-checkbox.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- ページネーションするチェックボックス付きのリスト -->
+        <label for="all"><input type="checkbox" id="all">すべて選択</label>
+        <div class="listbox"></div>
+        <div>
+            <ul class="pagination-link">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul>
+        </div>
+
+        <div class="debug">
+            <p>debug</p>
+            <p>page: <span id="page"></span></p>
+            <p>array: <span id="array"></span></p>
+            <textarea name="array" id="state" cols=""></textarea>
+        </div>
+
+    </div>
+
+    <script>
+        // global state
+        let state = []
+
+        // state 与えられた配列をstateに入れる。もし配列に存在していたら削除する
+        function setState(array) {
+            console.log(array);
+            for (let i = 0; i < array.length; i++) {
+                let index = state.indexOf(array[i]);
+                if (index === -1) {
+                    state.push(array[i]);
+                } else {
+                    state.splice(index, 1);
+                }
+            }
+        }
+    </script>
+
+    <script>
+        // アイテム作成処理
+        function renderList(page) {
+            // listboxの下の要素を一旦空にする
+            document.querySelector('.listbox').innerHTML = '';
+            // listboxの下に表示する要素を作成する
+            for (let i = 0; i < 10; i++) {
+                let id = i + 1 + (page - 1) * 10;
+                //label
+                let label = document.createElement('label');
+                label.setAttribute('for', 'checkbox' + id);
+
+                //checkbox 
+                let checkbox = document.createElement('input');
+                checkbox.setAttribute('type', 'checkbox');
+                checkbox.setAttribute('id', 'checkbox' + id);
+                checkbox.setAttribute('data-id', id);
+                // stateの状態を反映
+                if (state.indexOf(id) != -1) {
+                    checkbox.checked = true;
+                }
+                // add checkbox change event listener
+                checkbox.addEventListener('change', function () {
+                    let id = parseInt(this.dataset.id);
+                    setState([id]);
+                    let array = document.querySelector('#state');
+                    array.value = state.join(',');
+                });
+                label.appendChild(checkbox);
+                // item + id を追加
+                let span = document.createElement('span');
+                span.innerHTML = 'item ' + id;
+                label.appendChild(span);
+
+                // listboxに追加
+                document.querySelector('.listbox').appendChild(label);
+                document.querySelector('#page').innerHTML = page;
+            }
+        }
+        renderList(1);
+    </script>
+
+    <script>
+        // すべて選択の処理
+        let all = document.querySelector('#all');
+        // const page = document.querySelector('#page').innerHTML;
+        all.addEventListener('change', function () {
+            let array = [];
+            state = [];//一旦初期化
+            if (this.checked) {
+                //全ページチェックする
+                for (let i = 0; i < pageMax; i++) {
+                    for (let j = 0; j < 10; j++) {
+                        let id = j + 1 + i * 10;
+                        array.push(id);
+                    }
+                }
+            }
+            setState(array);
+            let arrayInput = document.querySelector('#state');
+            arrayInput.value = state.join(',');
+
+            //ページ反映
+            renderList(page)
+        });
+    </script>
+
+
+
+    <script>
+        // ページネーションの処理
+        let page = 1;
+        let pageMax = 4;
+        let pagination = document.querySelectorAll('.pagination-link li a');
+        for (let i = 0; i < pagination.length; i++) {
+            pagination[i].addEventListener('click', function () {
+                page = i + 1;
+                renderList(page);
+            });
+        }
+    </script>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

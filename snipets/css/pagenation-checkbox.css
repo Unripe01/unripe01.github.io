@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: min(100% - 2rem, 640px);
+    margin: 10rem auto;
+    margin-inline: auto;
+    padding: 0;
+}
+
+.listbox {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    /* border: solid thin gray; */
+    background-color: pink;
+    /* height: 10em; */
+    overflow: auto;
+}
+.listbox input {
+    margin: 0 10px;
+}
+
+.pagination-link {
+    margin: 0;
+}
+.pagination-link li {
+    display: inline;
+    /* 横並びに */
+    flex-direction: row;
+    
+}
+
+.pagination-link li + li::before {
+    content: ' | ';
+}
+
+.debug {
+    margin-top: 5rem;
+}
+
+.debug textarea{
+    width: 100%;
+    height: auto;
+}
